@@ -1,14 +1,14 @@
 <script lang="ts">
 	import { Button } from '$lib/components/ui/button';
 	import * as Avatar from '$lib/components/ui/avatar';
-	// import bgImg from '$lib/assets/img/img_background.jpg';
+	import pien from '$lib/assets/img/img_pien.png';
 </script>
 
 <main class="page">
 	<div class="page__inner">
 		<!-- Avatar Icon -->
 		<Avatar.Root class="avatar">
-			<Avatar.Image src="https://github.com/shadcn.png" alt="@shadcn" />
+			<Avatar.Image src={pien} alt="@shadcn" />
 			<Avatar.Fallback>CN</Avatar.Fallback>
 		</Avatar.Root>
 
