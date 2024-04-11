@@ -1,22 +1,25 @@
-# create-svelte
+# Linky - a simple link in bio page
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
+## Overview
 
-## Creating a project
+This is a simple link in bio page that I created using SvelteKit. It is a simple page that allows you to add links to your social media profiles and other websites. It is a simple page that is easy to use and easy to customize.
 
-If you're seeing this, you've probably already done this step. Congrats!
+### Features
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+- Add links to your social media profiles and other websites
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
 
-## Developing
+### Screenshots
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+![Screenshot](./.readme-img/01.png "Main Page") 
+Main Page
+
+
+## Tech
+
+### Developing
+
+Once you've clone this project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
 
 ```bash
 npm run dev
@@ -25,7 +28,7 @@ npm run dev
 npm run dev -- --open
 ```
 
-## Building
+### Building
 
 To create a production version of your app:
 
@@ -36,3 +39,13 @@ npm run build
 You can preview the production build with `npm run preview`.
 
 > To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+
+
+### Technologies
+
+This project uses the following tech:
+
+- [SvelteKit](https://kit.svelte.dev/) - The framework for building the app
+- [Tailwind CSS](https://tailwindcss.com/) - A utility-first CSS framework
+- [shadcn-svelte](https://www.shadcn-svelte.com/) - A component library for SvelteKit
+- [SASS](https://sass-lang.com/) - A CSS extension language
