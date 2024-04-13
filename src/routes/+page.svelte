@@ -31,6 +31,10 @@
 
 		<!-- A row of icon buttons -->
 	</div>
+
+	<div class="page__footer">
+		<p>This page is developed by <a href="https://jacky.fan">Jacky Fan</a> @ 2024</p>
+	</div>
 </main>
 
 <style lang="scss">
@@ -85,6 +89,29 @@
 
 
 		}
+
+		&__footer {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100vw;
+
+			display: flex;
+			flex-direction: column;
+			flex-wrap: nowrap;
+			justify-content: center;
+			align-items: center;
+
+			padding-block: 16px;
+			font-size: 14px;
+			color: white;
+
+			& a {
+				color: lightblue;
+				text-decoration: underline;
+			}
+		}
+
 	}
 
 	.title {
