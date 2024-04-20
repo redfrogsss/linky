@@ -1,0 +1,15 @@
+meta:
+  title: Jacky Fan's Link
+  description: You can find my media links in this page.
+title: Jacky Fan
+subtitle: I eat computer bugs.
+buttons:
+  - name: My Website
+    href: https://jacky.fan
+  - name: Instagram
+    href: https://www.instagram.com/jacky.f.fan
+  - name: Github
+    href: https://github.com/redfrogsss
+  - name: LinkedIn
+    href: https://www.linkedin.com/in/jacky-fan-dev
+footer: This page is developed by <a href="https://jacky.fan">Jacky Fan</a> @ 2024

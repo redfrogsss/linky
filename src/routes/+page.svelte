@@ -1,43 +1,44 @@
-<script lang="ts">
+<script lang="js">
 	import { Button } from '$lib/components/ui/button';
 	import * as Avatar from '$lib/components/ui/avatar';
 	import pien from '$lib/assets/img/img_pien.png';
+	
+	/** @type {import('./$types').PageData} */
+	export let data;
 </script>
 
-
 <svelte:head>
-	<title>Jacky Fan's Links</title>
-	<meta name="description" content="You can find my media links in this page." />
+	<title>{data.meta.title}</title>
+	<meta name="description" content="{data.meta.description}" />
 </svelte:head>
 <main class="page">
 	<div class="page__inner">
 		<!-- Avatar Icon -->
 		<Avatar.Root class="avatar">
-			<Avatar.Image src={pien} alt="Jacky Fan" />
-			<Avatar.Fallback>Jacky Fan</Avatar.Fallback>
+			<Avatar.Image src={pien} alt="data.title" />
+			<Avatar.Fallback>{data.title}</Avatar.Fallback>
 		</Avatar.Root>
 
 		<div class="page__title">
 			<!-- Title -->
-			<h1 class="title">Jacky F.</h1>
+			<h1 class="title">{data.title}</h1>
 
 			<!-- Subtitle -->
-			<p class="subtitle">I eat computer bugs.</p>
+			<p class="subtitle">{data.subtitle}</p>
 		</div>
 
 		<!-- Some Full Width Buttons -->
 		<div class="page__buttons">
-			<Button href="https://jacky.fan" variant="outline" size="lg" target="_blank">My Website</Button>
-			<Button href="https://www.instagram.com/jacky.f.fan" variant="outline" size="lg" target="_blank">Instagram</Button>
-			<Button href="https://github.com/redfrogsss" variant="outline" size="lg" target="_blank">Github</Button>
-			<Button href="https://www.linkedin.com/in/jacky-fan-dev/" variant="outline" size="lg" target="_blank">LinkedIn</Button>
+			{#each data.buttons as { name, href }, i}
+			<Button href="{href}" variant="outline" size="lg" target="_blank">{name}</Button>
+			{/each}
 		</div>
 
 		<!-- A row of icon buttons -->
 	</div>
 
 	<div class="page__footer">
-		<p>This page is developed by <a href="https://jacky.fan">Jacky Fan</a> @ 2024</p>
+		<p>{@html data.footer}</p>
 	</div>
 </main>
 
