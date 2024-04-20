@@ -8,8 +8,8 @@
 	<div class="page__inner">
 		<!-- Avatar Icon -->
 		<Avatar.Root class="avatar">
-			<Avatar.Image src={pien} alt="@shadcn" />
-			<Avatar.Fallback>CN</Avatar.Fallback>
+			<Avatar.Image src={pien} alt="Jacky Fan" />
+			<Avatar.Fallback>Jacky Fan</Avatar.Fallback>
 		</Avatar.Root>
 
 		<div class="page__title">
@@ -70,6 +70,8 @@
 			flex-wrap: nowrap;
 			align-items: center;
 			z-index: 1;
+
+			padding-block: 100px;
 		}
 
 		&__title {
@@ -128,6 +130,7 @@
 	:global(.avatar) {
 		width: clamp(120px, 24vw, 160px);
 		height: unset;
+		aspect-ratio: 1;
 	}
 
 </style>
