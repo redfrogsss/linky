@@ -4,6 +4,11 @@
 	import pien from '$lib/assets/img/img_pien.png';
 </script>
 
+
+<svelte:head>
+	<title>Jacky Fan's Links</title>
+	<meta name="description" content="You can find my media links in this page." />
+</svelte:head>
 <main class="page">
 	<div class="page__inner">
 		<!-- Avatar Icon -->
@@ -22,11 +27,10 @@
 
 		<!-- Some Full Width Buttons -->
 		<div class="page__buttons">
-			<Button href="mailto:contact@jacky.fan" variant="outline" size="lg">Email</Button>
-			<Button href="https://github.com/redfrogsss" variant="outline" size="lg">Github</Button>
-			<!-- <Button href="https://www.linkedin.com/in/jacky-fan-dev/" variant="outline" size="lg">LinkedIn</Button> -->
-			<Button href="https://blog.jacky.fan/" variant="outline" size="lg">Blog</Button>
-			<Button href="https://blog.jacky.fan/" variant="outline" size="lg">Instagram</Button>
+			<Button href="https://jacky.fan" variant="outline" size="lg" target="_blank">My Website</Button>
+			<Button href="https://www.instagram.com/jacky.f.fan" variant="outline" size="lg" target="_blank">Instagram</Button>
+			<Button href="https://github.com/redfrogsss" variant="outline" size="lg" target="_blank">Github</Button>
+			<Button href="https://www.linkedin.com/in/jacky-fan-dev/" variant="outline" size="lg" target="_blank">LinkedIn</Button>
 		</div>
 
 		<!-- A row of icon buttons -->
@@ -119,12 +123,13 @@
 	.title {
 		font-weight: 700;
 		font-size: 24px;
-			color: #fff;
+		color: #fff;
 	}
 
 	.subtitle {
 		font-size: 18px;
-			color: #fff;
+		color: #fff;
+		margin-block: 8px;
 	}
 
 	:global(.avatar) {
